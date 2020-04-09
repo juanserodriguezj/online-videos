@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> -->
     <title>Document</title>
 </head>
 <style>
     body {
         margin: 0;
-        background-color: lightseagreen;
-        font-family: 'Muli', sans-serif;
+        background-color: #8F57FD;
+        font-family: system-ui;
     }
-
+/* Estilos al header */
     .header {
-        background-color: lightseagreen;
+        background-color: #8F57FD;
         width: 100%;
         height: 80px;
         display: flex;
@@ -84,9 +84,33 @@
     .header-menu-profile p {
         cursor: pointer;
     }
+/* Estilos a la seccion principal */
+    .main{
+        height: 300px;
+    }
+    .main-title {
+        color: white;
+        font-size: 25px;
+    }
+    .input{
+        background-color: rgba(255, 255, 255, .3);
+        border: 2px solid white;
+        border-radius: 100px;
+        color: white;
+        font-family: system-ui;
+        font-size: 16px;
+        height: 50px;
+        padding: 0 20px;
+        width: 70%;
+        outline: none; 
+    }
+    ::placeholder{
+        color: white;
+    }
 </style>
 
 <body>
+<!----------- Inicio header ----------->
     <header class="header">
         <img class="header-img"
             src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png"
@@ -104,6 +128,14 @@
             </ul>
         </div>
     </header>
+<!----------- Fin header ----------->
+
+<!----------- Inicio seccion principal ----------->
+<main class="main">
+    <h2 class="main-title">¿Que quieres ver hoy?</h2>
+    <input class="input" type="text" placeholder="Buscar...">
+</main>
+<!----------- Fin seccion principal ----------->
 </body>
 
 </html>

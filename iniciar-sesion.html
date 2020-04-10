@@ -26,12 +26,41 @@
     top: 0px;
     width: 100%;
   }
-  .header__img {
+  .header-img {
     margin-left: 30px;
     width: 200px;
   }
 </style>
 <body>
-    
+  <header class="header">
+    <img class="header-img"
+        src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
+  </header>
+  <section class="login">
+    <section class="login-container">
+      <h2>Inicia Sesión</h2>
+      <form class="login-container-form">
+        <input class="input" type="text" placeholder="Correo">
+        <input class="input" type="password" placeholder="Contaseña">
+        <button class="button">Iniciar sesion</button>
+        <div class="login-container-remenberme">
+          <label>
+            <input type="checkbox" name="" id="cbox1" value="checkbox">Recuerdame
+            <a href="/">Olvide mi contraseña</a>
+          </label>
+        </div>
+      </form>
+      <section class="login-container-socialmedia">
+        <div><img src="./assets/google-icon.png" alt="Google">Inicia sesion con google</div>
+        <div><img src="./assets/twitter-icon.png" alt="">Inicia sesion con twitter</div>
+      </section>
+    </section>
+    <p class="login-container-register">¿ No tienes ninguna cuenta ? <a href="/">Regístrate</a></p>
+  </section>
+  <footer class="footer">
+    <a href="/">Términos de uso</a>
+    <a href="/">Declaracion de privacidad</a>
+    <a href="/">Centro de ayuda</a>
+  </footer>
 </body>
 </html>
